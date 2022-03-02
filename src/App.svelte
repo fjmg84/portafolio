@@ -4,9 +4,12 @@
   import Header from "./Header.svelte";
   import Lightbulb from "svelte-material-icons/LightbulbOn.svelte";
 
-  let { texto, fondo } = JSON.parse(localStorage.getItem("theme"));
+  let { texto, fondo } = JSON.parse(localStorage.getItem("theme")) || {
+    texto: "text-white",
+    fondo: "bg-slate-900",
+  };
 
-  $: handleChangeTheme = () => {
+  const handleChangeTheme = () => {
     if (texto === "text-slate-900" && fondo === "bg-white") {
       document.documentElement.classList.add("dark");
       texto = "text-white";
