@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: rgb(38 38 38);
+  color: rgb(156 163 175); */
+  padding: 5%;
+}
+
+h1 {
+  margin-left: 20px;
+  color: #9333ea;
+  font-size: x-large !important;
+  font-weight: bolder !important;
+  text-transform: uppercase;
+}
