@@ -4,7 +4,8 @@
 </script>
 
 <header>
-  <div class="grid grid-flow-row grid-cols-2">
+  <!--grid grid-flow-row grid-cols-2 -->
+  <div class="grid grid-cols-2">
     <div class="py-4 animate__animated animate__fadeIn">
       <img class="logo" src={logo} alt={logo} />
     </div>
@@ -13,6 +14,11 @@
         <li>
           <span class="titulo__personales">nombre:</span><span
             class="datos__personales">Fidel de Jesus Miranda Gallego</span
+          >
+        </li>
+        <li>
+          <span class="titulo__personales">edad:</span><span
+            class="datos__personales">{edad} año</span
           >
         </li>
         <li>

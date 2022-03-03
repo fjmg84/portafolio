@@ -1,6 +1,6 @@
 <article>
   <h1>Formaciones Adicionales</h1>
-  <div class="grid">
+  <div class="grid font-light italic">
     <ul>
       <li>Curso de Programación Avanzado en Bash</li>
       <li>Curso de Seguridad Informática I, II, III</li>
@@ -12,7 +12,7 @@
   </div>
 
   <h1>Trabajos realizados</h1>
-  <div class="grid">
+  <div class="grid font-light italic">
     <ul>
       <li>kefacil.com(e-commerce)</li>
       <li>SisReclam(sistema para las reclamación de productos).</li>
@@ -33,12 +33,12 @@
     padding: 10px;
     .grid {
       margin: 0px 40px 10px;
-      ul {
+      /* ul {
         li {
           font-style: italic;
           font-weight: 100;
         }
-      }
+      } */
     }
   }
 </style>
