@@ -1,6 +1,6 @@
-<article>
+<article class="mb-5">
   <h1>Estudios</h1>
-  <div class="grid">
+  <div class="mx-5">
     <p>
       <span class="italic font-light">
         Lic. en Ciencias Informáticas, Inst. Pedagógico Juan A. Marinello,
@@ -17,10 +17,6 @@
 
 <style lang="scss">
   article {
-    padding: 10px;
-    .grid {
-      margin: 0px 40px 10px;
-    }
     ul {
       li {
         font-weight: bold;

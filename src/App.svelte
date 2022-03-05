@@ -25,7 +25,7 @@
 </script>
 
 <div
-  class={`${texto} ${fondo} rounded-lg px-6 py-8 shadow-xl dark:bg-slate-900`}
+  class={`container mx-auto ${texto} ${fondo} rounded-lg px-6 py-8 shadow-xl dark:bg-slate-900`}
 >
   <Header />
   <div on:click={handleChangeTheme}>

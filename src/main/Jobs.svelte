@@ -1,6 +1,6 @@
-<article>
+<article class="mb-5">
   <h1>Experiencia Laboral</h1>
-  <div class="grid">
+  <div class="mx-5 mb-5">
     <span class="font-bold uppercase">ACUBAMOS</span>
     <p>
       <span class="font-bold">Cargo:</span>
@@ -16,7 +16,7 @@
       >
     </p>
   </div>
-  <div class="grid">
+  <div class="mx-5 mb-5">
     <span class="font-bold uppercase">EMCOMED</span>
     <p>
       <span class="font-bold">Cargo:</span>
@@ -28,16 +28,16 @@
         Administración de servidores Linux y Windows. Trabajar con
         virtualización de servicios mediante VMware. Configuración de
         corta-fuegos. Trabajo en sistema de noticias utilizando scraping con
-        Symfony3 y MYSQL para la manipulación de datos. Trabaje en equipo para
-        un sistema de ventas, donde se pueden observar datos y conocer la
-        ubicación y el estado de un producto, todo en tiempo real, utilizando
-        NodeJs como microservicio, React como frontend y MSSQL y MySQL como bd.
-        También en equipo un sistema en Python ,SQLite y MSSQL que para la
-        distribución de medicamentos para las instituciones de salud pública.</span
+        Symfony3 y MYSQL para el análisis de datos. Trabaje en equipo para un
+        sistema de ventas, donde se pueden observar datos y conocer la ubicación
+        y el estado de un producto, todo en tiempo real, utilizando NodeJs como
+        microservicio, React como frontend y MSSQL y MySQL como bd. También en
+        equipo un sistema en Python ,SQLite y MSSQL que para la distribución de
+        medicamentos para las instituciones de salud pública.</span
       >
     </p>
   </div>
-  <div class="grid">
+  <div class="mx-5 mb-5">
     <span class="font-bold uppercase">PRINCITY</span>
     <p>
       <span class="font-bold">Cargo:</span>
@@ -52,7 +52,7 @@
       >
     </p>
   </div>
-  <div class="grid">
+  <div class="mx-5 mb-5">
     <span class="font-bold uppercase">COPEXTEL</span>
     <p>
       <span class="font-bold">Cargo:</span>
@@ -73,12 +73,3 @@
     </p>
   </div>
 </article>
-
-<style lang="scss">
-  article {
-    padding: 10px;
-    .grid {
-      margin: 0px 40px 10px;
-    }
-  }
-</style>
