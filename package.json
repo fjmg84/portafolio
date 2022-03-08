@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "tail": "npx tailwindcss -i input.css -o ./public/global.css --watch",
-    "start": "sirv public --no-clear"
+    "start": "sirv public --no-clear -s"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -27,6 +27,8 @@
     "sass": "^1.49.9",
     "sirv-cli": "^2.0.0",
     "svelte-material-icons": "^1.0.3",
-    "svelte-preprocess": "^4.10.4"
+    "svelte-pdf": "^1.0.10",
+    "svelte-preprocess": "^4.10.4",
+    "svelte-routing": "^1.6.0"
   }
 }
