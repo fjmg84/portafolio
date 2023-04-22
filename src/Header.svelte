@@ -22,24 +22,24 @@
     <div class="py-4 text-left md:text-right">
       <ul>
         <li>
-          <span class="titulo__personales">nombre:</span><span
+          <span class="titulo__personales">nombre: </span><span
             class="datos__personales">Fidel de Jesus Miranda Gallego</span
           >
         </li>
         <li>
-          <span class="titulo__personales">edad:</span><span
+          <span class="titulo__personales">edad: </span><span
             class="datos__personales">{edad} año</span
           >
         </li>
         <li>
-          <span class="titulo__personales">móvil:</span><span
+          <span class="titulo__personales">móvil: </span><span
             class="datos__personales"
           >
             (+53) 54756652</span
           >
         </li>
         <li>
-          <span class="titulo__personales">email:</span><span
+          <span class="titulo__personales">email: </span><span
             class="datos__personales"
           >
             <a href="mailto:fjmgqba@gmail.com">fjmgqba@gmail.com</a></span
