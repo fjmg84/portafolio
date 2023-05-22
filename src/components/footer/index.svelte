@@ -47,7 +47,7 @@
           <div class="description">
             <span>facebook:</span>
             <span>
-              <a target="_blank" href={contactUs.facebook.text}
+              <a target="_blank" href={contactUs.facebook.url}
                 >{contactUs.facebook.text}</a
               >
             </span>
