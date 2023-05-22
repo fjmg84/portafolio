@@ -1,36 +1,32 @@
 <script>
   import "animate.css";
-  import Lightbulb from "svelte-material-icons/LightbulbOn.svelte";
-
-  import Main from "./views/main/Main.svelte";
-  import Header from "./Header.svelte";
-
-  let { texto, fondo } = JSON.parse(localStorage.getItem("theme")) || {
-    texto: "text-white",
-    fondo: "bg-slate-900",
-  };
-
-  const handleChangeTheme = () => {
-    if (texto === "text-slate-900" && fondo === "bg-white") {
-      document.documentElement.classList.add("dark");
-      texto = "text-white";
-      fondo = "bg-slate-900";
-      localStorage.setItem("theme", JSON.stringify({ texto, fondo }));
-    } else {
-      document.documentElement.classList.remove("dark");
-      texto = "text-slate-900";
-      fondo = "bg-white";
-      localStorage.setItem("theme", JSON.stringify({ texto, fondo }));
-    }
-  };
+  import Header from "./components/header/index.svelte";
+  import Main from "./components/main/index.svelte";
+  import Footer from "./components/footer/index.svelte";
+  import scrollAnimation from "../src/utils/scrollAnimation";
+  scrollAnimation();
 </script>
 
-<div
-  class={`container mx-auto ${texto} ${fondo} rounded-lg px-6 py-8 shadow-xl dark:bg-slate-900`}
->
+<div class="header">
   <Header />
-  <div on:click={handleChangeTheme}>
-    <Lightbulb size="25" />
-  </div>
   <Main />
+  <Footer />
 </div>
+
+<style lang="scss">
+  /* .glass {
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  } */
+
+  .header {
+    background-color: rgb(38 38 38);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(38 38 38);
+    z-index: 100;
+  }
+</style>

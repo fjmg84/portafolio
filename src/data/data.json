@@ -1,0 +1,95 @@
+{
+  "presentation": {
+    "title": "Hi, I'm a frontend developer.",
+    "subtitle": "My name is Fidel de J. Miranda Gallego",
+    "subtitle2": "I dedicate myself to creating web applications..."
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "text": "I like to learn and propose challenges. I consider myself enthusiastic and constant. I like reading and good music. I know how to work in a team, listen and accept criticism. Responsible with work and before life."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "text": [
+      {
+        "entity": "dspot",
+        "post": "Frontend Developer"
+      },
+
+      {
+        "entity": "ACUBAMOS",
+        "post": "FullStack Developer"
+      },
+      {
+        "entity": "EMCOMED",
+        "post": "Network Administrator & Backend Developer"
+      },
+      {
+        "entity": "PRINCITY",
+        "post": "Graphic Designer"
+      },
+      {
+        "entity": "COPEXTEL",
+        "post": "Information Security Manager"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "text": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Styles Component",
+      "JavaScript",
+      "TypeScript",
+      "ReactJS",
+      "NextJS",
+      "Redux",
+      "NodeJs",
+      "Linux Server",
+      "SQL",
+      "GraphQL"
+    ]
+  },
+  "jobs": [
+    {
+      "name": "kefacil.com",
+      "description": "e-commerce"
+    },
+    {
+      "name": "SisReclam",
+      "description": "Sistema para la reclamacion de productos."
+    },
+    {
+      "name": "Informes",
+      "description": "Herramienta para informes logisticos y de control de pagos y cobros."
+    },
+    {
+      "name": "camongs.es",
+      "description": "Landing Page para CAMON Global Services"
+    }
+  ],
+  "contactUs": {
+    "title": "Contact me",
+    "email": {
+      "text": "fjmgqba@gmail.com",
+      "url": "fjmgqba@gmail.com",
+      "image": ""
+    },
+    "github": {
+      "text": "fjmg84.github",
+      "url": "https://fjmg84.github.io",
+      "image": ""
+    },
+    "facebook": {
+      "text": "facebook/fjmg84",
+      "url": "",
+      "image": ""
+    },
+    "whatsapp": {
+      "text": "+53 54756652",
+      "image": ""
+    }
+  }
+}

@@ -2,7 +2,7 @@
   import { Router, Route } from "svelte-routing";
 
   import Home from "./Home.svelte";
-  import Download from "./views/Download.svelte";
+  import Download from "./example/Download.svelte";
 </script>
 
 <Router>

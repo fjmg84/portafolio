@@ -1,0 +1,170 @@
+<script>
+  import { presentation } from "../../data/data.json";
+  let logo = "./logo.png";
+</script>
+
+<header>
+  <div class="description">
+    <div class="logo">
+      <img class="logo_img" src={logo} alt="logo" />
+    </div>
+
+    <h1 class="title">
+      <span>
+        {presentation.title}
+      </span>
+    </h1>
+
+    <h2 class="subtitle1">{presentation.subtitle}</h2>
+
+    <div class="subtitle2">
+      <span>{presentation.subtitle2}</span>
+    </div>
+
+    <span class="downloadBtn"
+      ><a
+        target="_blank"
+        href="https://drive.google.com/file/d/1rmxK27yQluikUUB1PDLwWQvpmgUcW8Qu/view?usp=share_link"
+        >Download CV in pdf</a
+      ></span
+    >
+  </div>
+</header>
+
+<style lang="scss">
+  @import "./../../color.scss";
+
+  header {
+    height: 100vh;
+    padding: 2%;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    margin: 0%;
+  }
+
+  .downloadBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(90deg, $blue, $dark_violet);
+    border: 0%;
+    margin: 2%;
+    transform: rotateZ(5deg);
+    transition: all 0.2s ease-in-out;
+
+    a {
+      font-size: 1em;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    &:hover {
+      transform: rotateZ(0deg);
+      background: linear-gradient(45deg, $dark_violet, $blue);
+      a {
+        text-shadow: 5px 5px 10px #333;
+      }
+    }
+  }
+
+  .title {
+    font-size: 5rem;
+    max-width: 750px;
+    width: 100%;
+    letter-spacing: -0.06em;
+  }
+
+  .subtitle1 {
+    font-style: italic;
+  }
+
+  .subtitle2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .subtitle2 span {
+    display: block;
+    border-right: 2px solid;
+    overflow: hidden;
+    width: 34ch;
+    white-space: nowrap;
+    animation: typing 2.5s steps(34), blink 0.5s infinite step-end alternate;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .logo {
+    display: flex;
+    position: relative;
+  }
+
+  .logo img {
+    z-index: 100;
+  }
+
+  .logo::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #9333ea;
+    border-radius: 100%;
+    animation: move 6s linear infinite;
+  }
+
+  @keyframes move {
+    0% {
+      box-shadow: 10px 10px 50px #3376ea, -10px 10px 70px #9333ea,
+        10px -10px 0px 90#9333ea, -10px -10px 110px #3376ea;
+    }
+    25% {
+      box-shadow: -20px -20px 100px #9333ea, 20px 20px 200px #3376ea,
+        -20px 20px 100px #9333ea, 20px -20px 200px #3376ea;
+    }
+    50% {
+      box-shadow: 30px 30px 50px #9333ea, -30px -30px 70px #3376ea,
+        30px -30px 90px #9333ea, -30px 30px 200px #3376ea;
+    }
+    75% {
+      box-shadow: -20px -20px 150px #9333ea, 20px 20px 250px #3376ea,
+        -20px 20px 120px #9333ea, 20px -20px 50px #3376ea;
+    }
+    100% {
+      box-shadow: 10px 10px 50px #3376ea, -10px 10px 70px #9333ea,
+        10px -10px 0px 90#9333ea, -10px -10px 110px #3376ea;
+    }
+  }
+
+  .logo_img {
+    width: 20vw;
+    max-width: 200px;
+  }
+
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+</style>
