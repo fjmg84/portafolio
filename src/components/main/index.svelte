@@ -35,13 +35,13 @@
     height: auto;
   }
 
-  .divGallery {
+  /* .divGallery {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     width: auto;
-  }
+  } */
 
   .divSection {
     display: flex;

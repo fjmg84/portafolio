@@ -28,7 +28,6 @@
     "sass": "^1.49.9",
     "sirv-cli": "^2.0.0",
     "svelte-material-icons": "^1.0.3",
-    "svelte-pdf": "^1.0.10",
     "svelte-preprocess": "^4.10.4",
     "svelte-routing": "^1.6.0"
   }

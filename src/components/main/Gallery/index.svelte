@@ -1,5 +1,5 @@
 <div class="gallery">
-  <div class="card">
+  <!-- <div class="card">
     <div class="front glass">
       <img src="./image/camongs.png" alt="camongs" />
     </div>
@@ -8,27 +8,7 @@
       <span />
       <a href="#">repo en github</a>
     </div>
-  </div>
-  <div class="card">
-    <div class="front glass">
-      <img src="./image/camongs.png" alt="camongs" />
-    </div>
-    <div class={`back orange`}>
-      <h3>sitio: <a href="#">camongs.es</a></h3>
-      <span />
-      <a href="#">repo en github</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="front glass">
-      <img src="./image/camongs.png" alt="camongs" />
-    </div>
-    <div class={`back orange`}>
-      <h3>sitio: <a href="#">camongs.es</a></h3>
-      <span />
-      <a href="#">repo en github</a>
-    </div>
-  </div>
+  </div> -->
 </div>
 
 <style lang="scss">
@@ -43,7 +23,7 @@
     height: 100%;
   }
 
-  .glass {
+  /* .glass {
     backdrop-filter: blur(2px);
     background-color: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -121,5 +101,5 @@
       margin: 5%;
       transform: rotateY(0deg);
     }
-  }
+  } */
 </style>
