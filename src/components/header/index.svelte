@@ -75,7 +75,7 @@
   }
 
   .title {
-    font-size: 5rem;
+    font-size: 4.5em;
     max-width: 750px;
     width: 100%;
     letter-spacing: -0.06em;

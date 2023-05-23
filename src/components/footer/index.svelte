@@ -62,7 +62,7 @@
           <div class="description">
             <span>whatsapp:</span>
             <span>
-              <a target="_blank" href="https://wa.me/5354756653">
+              <a target="_blank" href={contactUs.whatsapp.url}>
                 {contactUs.whatsapp.text}
               </a>
             </span>
