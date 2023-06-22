@@ -6,7 +6,7 @@
 <header>
   <div class="description">
     <div class="logo">
-      <img class="logo_img" src={logo} alt="logo" />
+      <img class="logo_img" src={logo} alt="logo" width="200" height="200" />
     </div>
 
     <h1 class="title">
@@ -155,7 +155,7 @@
   }
 
   .logo_img {
-    width: 20vw;
+    width: 100%;
     max-width: 200px;
   }
 

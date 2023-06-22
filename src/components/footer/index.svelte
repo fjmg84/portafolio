@@ -11,7 +11,7 @@
       <li class="fade fade_top scroll_content">
         <div class="container">
           <div class="image gmail">
-            <img src="./svg/gmail.svg" alt="gmail" />
+            <img src="./svg/gmail.svg" alt="gmail" width="30" height="30" />
           </div>
 
           <div class="description">
@@ -27,7 +27,7 @@
       <li class="fade fade_top scroll_content">
         <div class="container">
           <div class="image github">
-            <img src="./svg/github.svg" alt="github" />
+            <img src="./svg/github.svg" alt="github" width="30" height="30" />
           </div>
           <div class="description">
             <span>github:</span>
@@ -42,7 +42,12 @@
       <li class="fade fade_top scroll_content">
         <div class="container">
           <div class="image facebook">
-            <img src="./svg/facebook.svg" alt="facebook" />
+            <img
+              src="./svg/facebook.svg"
+              alt="facebook"
+              width="30"
+              height="30"
+            />
           </div>
           <div class="description">
             <span>facebook:</span>
@@ -57,7 +62,12 @@
       <li class="fade fade_top scroll_content">
         <div class="container">
           <div class="image whatsapp">
-            <img src="./svg/whatsapp.svg" alt="whatsapp" />
+            <img
+              src="./svg/whatsapp.svg"
+              alt="whatsapp"
+              width="30"
+              height="30"
+            />
           </div>
           <div class="description">
             <span>whatsapp:</span>

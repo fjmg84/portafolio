@@ -37,7 +37,7 @@
     {title}
   </span>
   <button class="btn" id={btnProps} on:click={toggleF}>
-    <img src="./image/close.svg" alt="close" />
+    <img src="./svg/close.svg" alt="close" width="25" height="25" />
   </button>
 </h1>
 
