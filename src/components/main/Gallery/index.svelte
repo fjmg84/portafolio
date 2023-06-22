@@ -1,14 +1,34 @@
+<script>
+  import { jobs } from "../../../data/data.json";
+</script>
+
 <div class="gallery">
-  <!-- <div class="card">
-    <div class="front glass">
-      <img src="./image/camongs.png" alt="camongs" />
+  {#each jobs as job}
+    <div class="card">
+      <div class="front glass">
+        <img
+          width="300"
+          height="400"
+          src={`./image/${job.image}`}
+          alt="CAMON Global Services.webp"
+        />
+        <ul>
+          {#each job.tools as tool}
+            <li>{tool}</li>
+          {/each}
+        </ul>
+      </div>
+
+      <div class={`back orange`}>
+        <h3><a target="_blank" href={job.site}>site</a></h3>
+        <span />
+        {#if job.github}
+          <a target="_blank" href={job.github}>repo</a>
+        {/if}
+        <p>{job.description}</p>
+      </div>
     </div>
-    <div class={`back orange`}>
-      <h3>sitio: <a href="#">camongs.es</a></h3>
-      <span />
-      <a href="#">repo en github</a>
-    </div>
-  </div> -->
+  {/each}
 </div>
 
 <style lang="scss">
@@ -23,7 +43,7 @@
     height: 100%;
   }
 
-  /* .glass {
+  .glass {
     backdrop-filter: blur(2px);
     background-color: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -57,17 +77,35 @@
     }
 
     .front {
+      display: flex;
+      flex-direction: column;
       background: white;
       overflow: hidden;
       transform: perspective(500px) rotateY(0deg);
 
+      ul {
+        margin: 20px 0;
+        li {
+          margin: 0 1%;
+          display: inline;
+          padding: 0;
+          list-style: none;
+          background-color: $black;
+          border-radius: 10px;
+          color: white;
+          padding: 5px;
+          font-size: 12px;
+        }
+      }
+
       img {
+        width: auto;
         overflow: overlay;
       }
     }
 
     .orange {
-      background: linear-gradient($orange, $black);
+      background: linear-gradient(45deg, $violet, $dark_violet, $black);
       h3,
       a {
         color: $black;
@@ -89,6 +127,12 @@
       display: flex;
       flex-direction: column;
       transform: perspective(500px) rotateY(180deg);
+
+      p {
+        color: white;
+        margin: 2%;
+        text-align: center;
+      }
     }
   }
 
@@ -101,5 +145,5 @@
       margin: 5%;
       transform: rotateY(0deg);
     }
-  } */
+  }
 </style>

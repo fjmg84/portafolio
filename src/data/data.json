@@ -55,21 +55,32 @@
   },
   "jobs": [
     {
-      "name": "kefacil.com",
-      "description": "e-commerce"
+      "name": "camon",
+      "description": "Landing Page for CAMON Global Services",
+      "tools": ["NextJS", "Typescript", "SCSS"],
+      "site": "https://www.camongs.es/",
+      "github": null,
+      "image": "CAMON Global Services.webp"
     },
     {
-      "name": "SisReclam",
-      "description": "Sistema para la reclamacion de productos."
+      "name": "KIDSRUS",
+      "description": "Layout of an ecommerce as a demonstration of skills.",
+      "tools": ["NextJS", "JS", "HTML5", "SCSS"],
+      "site": "https://e-commerce-test-fjmg84.vercel.app",
+      "github": "https://github.com/fjmg84/e-commerce-test",
+      "image": "E-Commerce Baby.webp"
+      
     },
     {
-      "name": "Informes",
-      "description": "Herramienta para informes logisticos y de control de pagos y cobros."
-    },
-    {
-      "name": "camongs.es",
-      "description": "Landing Page para CAMON Global Services"
+      "name": "CurrentChange",
+      "description": "Tool to know the exchange rate between currencies. Consuming APILayer.",
+      "tools": ["NextJS", "Typescript", "SCSS"],
+      "site": "https://currency-exchange-fjmg84.vercel.app/",
+      "github":"https://github.com/fjmg84/fonoma-test",
+      "image": "Create Next App.webp"
+
     }
+    
   ],
   "contactUs": {
     "title": "Contact me",

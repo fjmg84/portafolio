@@ -17,11 +17,11 @@
       <Skills />
     </section>
   </div>
-  <!-- <div class="divGallery">
+  <div class="divGallery">
     <section>
       <Gallery />
     </section>
-  </div> -->
+  </div>
 </main>
 
 <style lang="scss">
