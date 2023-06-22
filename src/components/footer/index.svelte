@@ -137,7 +137,7 @@
     .description {
       display: flex;
       flex-direction: column;
-      font-size: 1em;
+      font-size: 0.789em;
       width: 70%;
       *background-color: yellowgreen;
 
