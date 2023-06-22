@@ -65,7 +65,7 @@
     {
       "name": "KIDSRUS",
       "description": "Layout of an ecommerce as a demonstration of skills.",
-      "tools": ["NextJS", "JS", "HTML5", "SCSS"],
+      "tools": ["NextJS", "JS", "SCSS"],
       "site": "https://e-commerce-test-fjmg84.vercel.app",
       "github": "https://github.com/fjmg84/e-commerce-test",
       "image": "E-Commerce Baby.webp"
