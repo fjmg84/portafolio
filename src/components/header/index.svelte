@@ -3,7 +3,7 @@
   let logo = "./logo.png";
 </script>
 
-<header>
+<header id="show__cursor">
   <div class="description">
     <div class="logo">
       <img class="logo_img" src={logo} alt="logo" width="200" height="200" />
@@ -118,7 +118,7 @@
   }
 
   .logo img {
-    z-index: 100;
+    z-index: 1;
   }
 
   .logo::after {
