@@ -25,21 +25,23 @@
     divLogo.style.height = value + "px";
 
     const showCursor = (entries) => {
+      const el = entries[0];
+
       if (X <= divHeader.offsetWidth - 100 && X >= 100) {
         divLogo.style.top = Y - 10 + "px";
         divLogo.style.left = X - 50 + "px";
       }
 
-      if (!entries[0].isIntersecting) {
-        divLogo.children.item(0).style.width = 50 + "px";
-        divLogo.children.item(0).style.height = 50 + "px";
-      } else {
+      if (el.isIntersecting) {
         divLogo.children.item(0).style.width = 0 + "px";
         divLogo.children.item(0).style.height = 0 + "px";
+        observer.disconnect();
+      } else {
+        divLogo.children.item(0).style.width = 50 + "px";
+        divLogo.children.item(0).style.height = 50 + "px";
       }
     };
-
-    let observer = new IntersectionObserver(showCursor, options);
+    const observer = new IntersectionObserver(showCursor, options);
     observer.observe(divShowCursor);
   });
 </script>
