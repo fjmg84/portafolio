@@ -67,9 +67,9 @@
     position: absolute;
     z-index: 100;
     top: 0;
-    transition: all 0.25s;
+    transition: all 0.2s;
     img {
-      transition: all 0.5s;
+      transition: all 0.2s;
     }
   }
 
