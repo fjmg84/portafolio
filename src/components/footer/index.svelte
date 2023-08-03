@@ -112,8 +112,8 @@
   .github {
     background-color: $github;
   }
-  .facebook {
-    background-color: $facebook;
+  .linkedin {
+    background-color: $linkedin;
   }
   .whatsapp {
     background-color: $whatsapp;

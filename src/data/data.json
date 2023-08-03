@@ -80,9 +80,9 @@
     },
     {
       "name": "Shopping Cart",
-      "description": "",
+      "description": "Simulates the process of adding and removing products to a shopping cart from an online store.",
       "tools": ["ReactJs", "Typescript", "SCSS", "ReduxToolkit", "RTQuery"],
-      "site": "https://shopping-cart-fjmg84.vercel.app/",
+      "site": "https://shopping-cart-five-bay.vercel.app/",
       "github": "https://github.com/fjmg84/shopping-cart",
       "image": "shopping__cart.webp"
     }
@@ -101,10 +101,10 @@
       "image": "github.svg"
     },
     {
-      "className": "facebook",
-      "text": "facebook/fidel.mirandagallego",
-      "url": "https://www.facebook.com/fidel.mirandagallego",
-      "image": "facebook.svg"
+      "className": "linkedin",
+      "text": "fidel-de-jesus-miranda-gallego",
+      "url": "https://www.linkedin.com/in/fidel-de-jesus-miranda-gallego-a171a0239/",
+      "image": "linkedin.svg"
     },
     {
       "className": "whatsapp",

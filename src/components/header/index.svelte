@@ -93,19 +93,6 @@
     }
   }
 
-  .gmail {
-    background-color: $gmail;
-  }
-  .github {
-    background-color: $github;
-  }
-  .facebook {
-    background-color: $facebook;
-  }
-  .whatsapp {
-    background-color: $whatsapp;
-  }
-
   .downloadBtn {
     display: flex;
     align-items: center;
