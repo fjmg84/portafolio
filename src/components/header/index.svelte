@@ -7,16 +7,16 @@
   <div class="contactUs">
     <ul>
       {#each contactUs as contact}
-        <a href={contact.url}>
-          <li>
+        <li>
+          <a href={contact.url}>
             <img
               src={`./svg/${contact.image}`}
               alt={contact.image}
               width="20px"
               height="20px"
             />
-          </li>
-        </a>
+          </a>
+        </li>
       {/each}
     </ul>
   </div>
@@ -74,21 +74,22 @@
     margin: 10px 0px;
     ul {
       display: flex;
-      align-items: center;
       justify-content: right;
       list-style: none;
       gap: 20px;
       li {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease;
-        border-radius: 100%;
-      }
-      li:hover {
-        background: $black;
+        a {
+          border-radius: 100%;
+          transition: all 0.5s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+        }
+        a:hover {
+          background: $black;
+        }
       }
     }
   }
