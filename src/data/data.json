@@ -60,7 +60,7 @@
       "tools": ["NextJS", "Typescript", "SCSS"],
       "site": "https://www.camongs.es/",
       "github": null,
-      "image": "CAMON Global Services.webp"
+      "image": "camon__global__services.webp"
     },
     {
       "name": "KIDSRUS",
@@ -68,41 +68,49 @@
       "tools": ["NextJS", "JS", "SCSS"],
       "site": "https://e-commerce-test-fjmg84.vercel.app",
       "github": "https://github.com/fjmg84/e-commerce-test",
-      "image": "E-Commerce Baby.webp"
-      
+      "image": "e-commerce__baby.webp"
     },
     {
       "name": "CurrentChange",
       "description": "Tool to know the exchange rate between currencies. Consuming APILayer.",
-      "tools": ["NextJS", "Typescript", "SCSS"],
+      "tools": ["NextJS", "Typescript", "SCSS", "React Query"],
       "site": "https://currency-exchange-fjmg84.vercel.app/",
-      "github":"https://github.com/fjmg84/fonoma-test",
-      "image": "Create Next App.webp"
-
-    }
-    
-  ],
-  "contactUs": {
-    "title": "Contact me",
-    "email": {
-      "text": "fjmgqba@gmail.com",
-      "url": "fjmgqba@gmail.com",
-      "image": ""
+      "github": "https://github.com/fjmg84/fonoma-test",
+      "image": "current__change.webp"
     },
-    "github": {
+    {
+      "name": "Shopping Cart",
+      "description": "",
+      "tools": ["ReactJs", "Typescript", "SCSS", "ReduxToolkit", "RTQuery"],
+      "site": "https://shopping-cart-fjmg84.vercel.app/",
+      "github": "https://github.com/fjmg84/shopping-cart",
+      "image": "shopping__cart.webp"
+    }
+  ],
+  "contactUs": [
+    {
+      "className": "gmail",
+      "text": "fjmgqba@gmail.com",
+      "url": "mailto:fjmgqba@gmail.com",
+      "image": "gmail.svg"
+    },
+    {
+      "className": "github",
       "text": "github.com/fjmg84",
       "url": "https://github.com/fjmg84",
-      "image": ""
+      "image": "github.svg"
     },
-    "facebook": {
+    {
+      "className": "facebook",
       "text": "facebook/fidel.mirandagallego",
       "url": "https://www.facebook.com/fidel.mirandagallego",
-      "image": ""
+      "image": "facebook.svg"
     },
-    "whatsapp": {
+    {
+      "className": "whatsapp",
       "text": "(+53) 54756652",
       "url": "https://wa.me/5354756652",
-      "image": ""
+      "image": "whatsapp.svg"
     }
-  }
+  ]
 }

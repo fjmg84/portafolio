@@ -28,8 +28,8 @@
       const el = entries[0];
 
       if (X <= divHeader.offsetWidth - 100 && X >= 100) {
-        divLogo.style.top = Y - 10 + "px";
-        divLogo.style.left = X - 50 + "px";
+        divLogo.style.top = Y - 0 + "px";
+        divLogo.style.left = X - 80 + "px";
       }
 
       if (el.isIntersecting) {
@@ -67,10 +67,10 @@
     position: absolute;
     z-index: 100;
     top: 0;
-    transition: all 0.2s;
+    /* transition: all 0.2s;
     img {
       transition: all 0.2s;
-    }
+    } */
   }
 
   .header {

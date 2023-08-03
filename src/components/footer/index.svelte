@@ -4,81 +4,32 @@
 </script>
 
 <footer>
-  <h1>{contactUs.title}</h1>
+  <h1>Contact Us</h1>
 
   <div class="contacts">
     <ul>
-      <li class="fade fade_top scroll_content">
-        <div class="container">
-          <div class="image gmail">
-            <img src="./svg/gmail.svg" alt="gmail" width="30" height="30" />
-          </div>
+      {#each contactUs as contact}
+        <li class="fade fade_top scroll_content">
+          <div class="container">
+            <div class={`image ${contact.className}`}>
+              <img
+                src={`./svg/${contact.image}`}
+                alt={contact.image}
+                width="30"
+                height="30"
+              />
+            </div>
 
-          <div class="description">
-            <span>email:</span>
-            <span>
-              <a target="_blank" href={`mailto:${contactUs.email.url}`}>
-                {contactUs.email.text}
-              </a>
-            </span>
+            <div class="description">
+              <span>
+                <a target="_blank" href={contact.url}>
+                  {contact.text}
+                </a>
+              </span>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="fade fade_top scroll_content">
-        <div class="container">
-          <div class="image github">
-            <img src="./svg/github.svg" alt="github" width="30" height="30" />
-          </div>
-          <div class="description">
-            <span>github:</span>
-            <span>
-              <a target="_blank" href={contactUs.github.url}>
-                {contactUs.github.text}
-              </a>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="fade fade_top scroll_content">
-        <div class="container">
-          <div class="image facebook">
-            <img
-              src="./svg/facebook.svg"
-              alt="facebook"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div class="description">
-            <span>facebook:</span>
-            <span>
-              <a target="_blank" href={contactUs.facebook.url}
-                >{contactUs.facebook.text}</a
-              >
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="fade fade_top scroll_content">
-        <div class="container">
-          <div class="image whatsapp">
-            <img
-              src="./svg/whatsapp.svg"
-              alt="whatsapp"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div class="description">
-            <span>whatsapp:</span>
-            <span>
-              <a target="_blank" href={contactUs.whatsapp.url}>
-                {contactUs.whatsapp.text}
-              </a>
-            </span>
-          </div>
-        </div>
-      </li>
+        </li>
+      {/each}
     </ul>
   </div>
 </footer>

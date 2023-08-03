@@ -10,7 +10,7 @@
           width="300"
           height="400"
           src={`./image/${job.image}`}
-          alt="CAMON Global Services.webp"
+          alt={job.image}
         />
         <ul>
           {#each job.tools as tool}
@@ -41,6 +41,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    gap: 10px;
   }
 
   .glass {
@@ -85,6 +86,13 @@
 
       ul {
         margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         li {
           margin: 0 1%;
           display: inline;
@@ -99,7 +107,8 @@
       }
 
       img {
-        width: auto;
+        width: 100%;
+        height: auto;
         overflow: overlay;
       }
     }

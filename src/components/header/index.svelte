@@ -1,9 +1,25 @@
 <script>
-  import { presentation } from "../../data/data.json";
+  import { presentation, contactUs } from "../../data/data.json";
   let logo = "./logo.png";
 </script>
 
 <header id="show__cursor">
+  <div class="contactUs">
+    <ul>
+      {#each contactUs as contact}
+        <a href={contact.url}>
+          <li>
+            <img
+              src={`./svg/${contact.image}`}
+              alt={contact.image}
+              width="20px"
+              height="20px"
+            />
+          </li>
+        </a>
+      {/each}
+    </ul>
+  </div>
   <div class="description">
     <div class="logo">
       <img class="logo_img" src={logo} alt="logo" width="200" height="200" />
@@ -39,12 +55,55 @@
     padding: 2%;
   }
 
+  @media (max-width: 600px) {
+    header {
+      height: 100%;
+    }
+  }
+
   h1,
   h2 {
     text-align: center;
   }
   h1 {
     margin: 0%;
+  }
+
+  .contactUs {
+    width: 100%;
+    margin: 10px 0px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      list-style: none;
+      gap: 20px;
+      li {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        border-radius: 100%;
+      }
+      li:hover {
+        background: $black;
+      }
+    }
+  }
+
+  .gmail {
+    background-color: $gmail;
+  }
+  .github {
+    background-color: $github;
+  }
+  .facebook {
+    background-color: $facebook;
+  }
+  .whatsapp {
+    background-color: $whatsapp;
   }
 
   .downloadBtn {
@@ -95,9 +154,9 @@
     display: block;
     border-right: 2px solid;
     overflow: hidden;
-    width: 34ch;
+    width: 38ch;
     white-space: nowrap;
-    animation: typing 2.5s steps(34), blink 0.5s infinite step-end alternate;
+    animation: typing 2.5s steps(38), blink 0.5s infinite step-end alternate;
   }
 
   @keyframes typing {
@@ -166,5 +225,6 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    gap: 10px;
   }
 </style>
