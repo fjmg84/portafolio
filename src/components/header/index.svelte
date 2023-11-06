@@ -40,7 +40,7 @@
     <span class="downloadBtn"
       ><a
         target="_blank"
-        href="https://drive.google.com/file/d/1rmxK27yQluikUUB1PDLwWQvpmgUcW8Qu/view?usp=share_link"
+        href="https://drive.google.com/file/d/1iFWqfRCOrkGZ0DIorNyWAsf4eAaAFoti/view?usp=drive_link"
         >Download CV in pdf</a
       ></span
     >
