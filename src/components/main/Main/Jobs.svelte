@@ -29,7 +29,7 @@
       display: flex;
       align-items: center;
       justify-content: left;
-      margin: 2%;
+      margin: 2% 0%;
       span {
         display: flex;
         align-items: center;
