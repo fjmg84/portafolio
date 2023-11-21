@@ -4,6 +4,7 @@
 
 {#each jobs as job}
   <article class="glass">
+    <div class="balloon" />
     <picture>
       <img
         width="300"
@@ -63,16 +64,24 @@
   article {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 28px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 10px 8px;
+    gap: 40px;
     transition: all 0.5s ease;
     cursor: crosshair;
     width: 100%;
     max-width: 350px;
-    height: 500px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
 
     &:hover {
       box-shadow: 0 0 4px $dark_violet;
+
+      .balloon {
+        bottom: -40%;
+        right: -40%;
+      }
     }
   }
 
@@ -82,11 +91,11 @@
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    background: white;
-    border-radius: 16px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     position: relative;
     height: 250px;
-    box-shadow: 0 0 30px black;
     & img {
       width: auto;
       height: 100%;
@@ -131,6 +140,28 @@
 
     a {
       color: white;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $github;
+      }
+    }
+  }
+
+  .balloon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: $dark_violet;
+    padding: 5px;
+    bottom: -25px;
+    right: -25px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+  }
+
+  @media (min-width: 768px) {
+    article {
+      height: 560px;
     }
   }
 </style>

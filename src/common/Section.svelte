@@ -66,6 +66,7 @@
     gap: 20px;
     width: 100%;
     h1 {
+      text-align: left;
       letter-spacing: -0.06em;
     }
   }
