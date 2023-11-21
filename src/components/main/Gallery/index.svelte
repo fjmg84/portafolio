@@ -104,12 +104,22 @@
   .text {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
     ul {
       list-style: none;
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
+      li {
+        background: lighten($color: $github, $amount: 15);
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 13px;
+      }
+    }
+
+    p {
+      line-height: 22px;
     }
   }
 
