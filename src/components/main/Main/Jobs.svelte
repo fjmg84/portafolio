@@ -3,7 +3,7 @@
   import { experience } from "../../../data/data.json";
 </script>
 
-<div class="container">
+<article class="container">
   <Section
     divProps={"experience"}
     btnProps={"experienceBtn"}
@@ -18,7 +18,7 @@
       {/each}
     </ul>
   </Section>
-</div>
+</article>
 
 <style lang="scss">
   ul {

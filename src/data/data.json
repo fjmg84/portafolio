@@ -40,6 +40,7 @@
       "HTML",
       "CSS",
       "SASS",
+      "Tailwindcss",
       "Styles Component",
       "JavaScript",
       "TypeScript",
@@ -47,6 +48,7 @@
       "NextJS",
       "Svelte",
       "Redux",
+      "Zustand",
       "NodeJs",
       "Linux Server",
       "SQL",
@@ -81,7 +83,13 @@
     {
       "name": "Shopping Cart",
       "description": "Simulates the process of adding and removing products to a shopping cart from an online store.",
-      "tools": ["ReactJs", "Typescript", "SCSS", "ReduxToolkit", "RTQuery"],
+      "tools": [
+        "ReactJs",
+        "Typescript",
+        "Tailwindcss",
+        "ReduxToolkit",
+        "RTQuery"
+      ],
       "site": "https://shopping-cart-five-bay.vercel.app/",
       "github": "https://github.com/fjmg84/shopping-cart",
       "image": "shopping__cart.webp"

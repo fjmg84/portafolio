@@ -6,22 +6,18 @@
 </script>
 
 <main>
-  <div class="divSection">
-    <section>
-      <AboutMe />
-    </section>
-    <section>
-      <Jobs />
-    </section>
-    <section>
-      <Skills />
-    </section>
-  </div>
-  <div class="divGallery">
-    <section>
-      <Gallery />
-    </section>
-  </div>
+  <section>
+    <AboutMe />
+  </section>
+  <section>
+    <Jobs />
+  </section>
+  <section>
+    <Skills />
+  </section>
+  <section class="gallery">
+    <Gallery />
+  </section>
 </main>
 
 <style lang="scss">
@@ -32,32 +28,22 @@
     justify-content: center;
     gap: 100px;
     padding: 0 5%;
-    height: auto;
   }
 
-  /* .divGallery {
+  section {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .gallery {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: auto;
-  } */
-
-  .divSection {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 70%;
-    height: auto;
-  }
-
-  .divSection:nth-last-child(1) {
-    max-width: 100%;
-  }
-
-  @media (max-width: 800px) {
-    .divSection {
-      width: 100%;
-    }
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+    max-width: 1000px;
   }
 </style>

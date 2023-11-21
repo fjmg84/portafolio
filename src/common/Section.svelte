@@ -32,14 +32,12 @@
   }
 </script>
 
-<h1>
-  <span>
+<button on:click={toggleF}>
+  <h1>
     {title}
-  </span>
-  <button class="btn" id={btnProps} on:click={toggleF}>
-    <img src="./svg/close.svg" alt="close" width="25" height="25" />
-  </button>
-</h1>
+  </h1>
+  <img id={btnProps} src="./svg/close.svg" alt="close" width="25" height="25" />
+</button>
 
 <div class="idDiv" id={`${divProps}`}>
   <div class="text">
@@ -57,16 +55,22 @@
     margin-bottom: 5%;
   }
 
-  h1 {
+  button {
+    font-family: "Wix Madefor Display", sans-serif;
+    cursor: pointer;
+    background: transparent;
+    border: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    span {
+    width: 100%;
+    h1 {
       letter-spacing: -0.06em;
     }
   }
 
-  .btn {
+  img {
     display: flex;
     justify-content: center;
     align-items: center;
