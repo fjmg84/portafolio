@@ -10,58 +10,8 @@
 }
 
 body {
-  font-family: "Wix Madefor Display", sans-serif;
-  background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  -webkit-background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  -moz-background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  -o-background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  color: rgb(156 163 175);
-  padding: 2%;
-}
-
-h1 {
-  margin: 5% 0%;
-  background: radial-gradient(violet, #9333ea);
-  background: -o-radial-gradient(violet, #9333ea);
-  background: -moz-radial-gradient(violet, #9333ea);
-  background: -webkit-radial-gradient(violet, #9333ea);
-  font-size: 3rem;
-
-  -webkit-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
+  color: white;
+  background: #020617;
 }
 
 .container {

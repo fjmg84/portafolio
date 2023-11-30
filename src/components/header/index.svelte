@@ -4,7 +4,7 @@
 </script>
 
 <header id="show__cursor">
-  <div class="contactUs">
+  <section class="contactUs">
     <ul>
       {#each contactUs as contact}
         <li>
@@ -19,54 +19,141 @@
         </li>
       {/each}
     </ul>
-  </div>
-  <div class="description">
-    <div class="logo">
-      <img class="logo_img" src={logo} alt="logo" width="200" height="200" />
-    </div>
-
-    <h1 class="title">
-      <span>
-        {presentation.title}
-      </span>
+  </section>
+  <section class="titles">
+    <h1>
+      Hi, <span>{presentation.title}</span>
     </h1>
 
-    <h2 class="subtitle1">{presentation.subtitle}</h2>
+    <div class="subtitles">
+      <img src={logo} alt="logo" width="200" height="200" />
 
-    <div class="subtitle2">
-      <span>{presentation.subtitle2}</span>
+      <div class="subtitles_text">
+        <h2>{presentation.subtitle}</h2>
+        <div class="subtitle2">
+          <span>{presentation.subtitle2}</span>
+        </div>
+
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1iFWqfRCOrkGZ0DIorNyWAsf4eAaAFoti/view?usp=drive_link"
+          >Download CV in pdf
+          <div class="subtitles_text_link_img">
+            <img
+              src="/svg/arrow-down-white.svg"
+              alt="arrow"
+              width="20"
+              height="20"
+            />
+            <img
+              src="/svg/arrow-down-black.svg"
+              alt="arrow"
+              width="20"
+              height="20"
+            />
+          </div>
+        </a>
+      </div>
     </div>
-
-    <span class="downloadBtn"
-      ><a
-        target="_blank"
-        href="https://drive.google.com/file/d/1iFWqfRCOrkGZ0DIorNyWAsf4eAaAFoti/view?usp=drive_link"
-        >Download CV in pdf</a
-      ></span
-    >
-  </div>
+  </section>
 </header>
 
 <style lang="scss">
   @import "./../../color.scss";
 
   header {
+    width: 100%;
     height: 100vh;
-    padding: 2%;
   }
 
-  @media (max-width: 600px) {
-    header {
-      height: 100%;
+  .titles {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5%;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: bold;
+      font-family: "Paytone One";
+
+      span {
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: "Ubuntu";
+      }
     }
   }
 
-  h1,
-  h2 {
-    text-align: center;
+  .subtitles {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  h1 {
-    margin: 0%;
+
+  .subtitles_text {
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    width: 600px;
+
+    h2 {
+      font-size: 4rem;
+      font-family: "Ubuntu";
+    }
+
+    a {
+      overflow: hidden;
+      position: relative;
+      padding: 18px 0px;
+      color: $white;
+      text-decoration: none;
+      font-family: "Ubuntu";
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $light_black;
+      border-radius: 10px;
+      margin: 10px 0;
+      max-width: 300px;
+      gap: 18px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: $white;
+        color: $light_black;
+        .subtitles_text_link_img {
+          :nth-child(1) {
+            transform: translateY(400%);
+          }
+
+          :nth-child(2) {
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  .subtitles_text_link_img {
+    display: flex;
+    flex-direction: column;
+
+    :nth-child(1) {
+      transition: all 0.5s ease;
+      transform: translateY(50%);
+    }
+
+    :nth-child(2) {
+      transition: all 0.5s ease;
+      transform: translateY(-400%);
+    }
   }
 
   .contactUs {
@@ -94,57 +181,22 @@
     }
   }
 
-  .downloadBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    background: linear-gradient(90deg, $blue, $dark_violet);
-    border: 0%;
-    margin: 2%;
-    transform: rotateZ(5deg);
-    transition: all 0.2s ease-in-out;
-
-    a {
-      font-size: 1em;
-      color: whitesmoke;
-      text-decoration: none;
-    }
-    &:hover {
-      transform: rotateZ(0deg);
-      background: linear-gradient(45deg, $dark_violet, $blue);
-      a {
-        text-shadow: 5px 5px 10px #333;
-      }
-    }
-  }
-
-  .title {
-    font-size: 4.5em;
-    max-width: 750px;
-    width: 100%;
-    letter-spacing: -0.06em;
-  }
-
-  .subtitle1 {
-    font-style: italic;
-  }
-
   .subtitle2 {
     width: 100%;
     display: flex;
-    justify-content: center;
-  }
-
-  .subtitle2 span {
-    display: block;
-    border-right: 2px solid;
-    overflow: hidden;
-    width: 38ch;
-    white-space: nowrap;
-    animation: typing 2.5s steps(38), blink 0.5s infinite step-end alternate;
+    justify-content: flex-start;
+    span {
+      font-size: 24px;
+      font-family: "Ubuntu";
+      display: block;
+      border-right: 2px solid;
+      overflow: hidden;
+      width: 38ch;
+      white-space: nowrap;
+      animation:
+        typing 2.5s steps(38),
+        blink 0.5s infinite step-end alternate;
+    }
   }
 
   @keyframes typing {
@@ -157,62 +209,5 @@
     50% {
       border-color: transparent;
     }
-  }
-
-  .logo {
-    display: flex;
-    position: relative;
-  }
-
-  .logo img {
-    z-index: 1;
-  }
-
-  .logo::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #9333ea;
-    border-radius: 100%;
-    animation: move 6s linear infinite;
-  }
-
-  @keyframes move {
-    0% {
-      box-shadow: 10px 10px 50px #3376ea, -10px 10px 70px #9333ea,
-        10px -10px 0px 90#9333ea, -10px -10px 110px #3376ea;
-    }
-    25% {
-      box-shadow: -20px -20px 100px #9333ea, 20px 20px 200px #3376ea,
-        -20px 20px 100px #9333ea, 20px -20px 200px #3376ea;
-    }
-    50% {
-      box-shadow: 30px 30px 50px #9333ea, -30px -30px 70px #3376ea,
-        30px -30px 90px #9333ea, -30px 30px 200px #3376ea;
-    }
-    75% {
-      box-shadow: -20px -20px 150px #9333ea, 20px 20px 250px #3376ea,
-        -20px 20px 120px #9333ea, 20px -20px 50px #3376ea;
-    }
-    100% {
-      box-shadow: 10px 10px 50px #3376ea, -10px 10px 70px #9333ea,
-        10px -10px 0px 90#9333ea, -10px -10px 110px #3376ea;
-    }
-  }
-
-  .logo_img {
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    gap: 10px;
   }
 </style>

@@ -46,14 +46,13 @@
   });
 </script>
 
-<div id="header" class="header">
-  <Header />
-  <Main />
-  <Footer />
-  <!--  <div id="move__logo" class="move__logo">
+<Header />
+<Main />
+<Footer />
+
+<!--  <div id="move__logo" class="move__logo">
     <img src="./logo.png" width="0" height="0" alt="logo" />
   </div> -->
-</div>
 
 <style lang="scss">
   .move__logo {
@@ -64,13 +63,5 @@
     img {
       transition: all 0.2s;
     } */
-  }
-
-  .header {
-    background-color: rgb(38 38 38);
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgb(38 38 38);
   }
 </style>
