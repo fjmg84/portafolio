@@ -26,7 +26,7 @@
     </h1>
 
     <div class="subtitles">
-      <img src={logo} alt="logo" width="200" height="200" />
+      <img class="logo" src={logo} alt="logo" width="200" height="200" />
 
       <div class="subtitles_text">
         <h2>{presentation.subtitle}</h2>
@@ -63,7 +63,7 @@
 
   header {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   .titles {
@@ -73,15 +73,19 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 5%;
+    gap: 20px;
+    margin: 140px 0px 40px;
 
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: bold;
       font-family: "Paytone One";
+      padding: 0;
+      margin: 0;
+      line-height: 50px;
 
       span {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         font-family: "Ubuntu";
       }
@@ -94,16 +98,26 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
   }
 
   .subtitles_text {
     display: flex;
     gap: 2vh;
     flex-direction: column;
-    width: 600px;
+    width: 100%; //600px;
 
     h2 {
-      font-size: 4rem;
+      font-size: 2rem; //4rem;
       font-family: "Ubuntu";
     }
 
@@ -141,6 +155,36 @@
     }
   }
 
+  .subtitle2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    span {
+      font-size: 14px; //24px;
+      font-family: "Ubuntu";
+      display: block;
+      border-right: 2px solid;
+      overflow: hidden;
+      width: 38ch;
+      white-space: nowrap;
+      animation:
+        typing 2.5s steps(38),
+        blink 0.5s infinite step-end alternate;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
   .subtitles_text_link_img {
     display: flex;
     flex-direction: column;
@@ -158,7 +202,10 @@
 
   .contactUs {
     width: 100%;
-    margin: 10px 0px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
     ul {
       display: flex;
       justify-content: right;
@@ -181,33 +228,55 @@
     }
   }
 
-  .subtitle2 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    span {
-      font-size: 24px;
-      font-family: "Ubuntu";
-      display: block;
-      border-right: 2px solid;
-      overflow: hidden;
-      width: 38ch;
-      white-space: nowrap;
-      animation:
-        typing 2.5s steps(38),
-        blink 0.5s infinite step-end alternate;
+  @media (max-width: 375px) {
+    .subtitles_text {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    .subtitle2 {
+      span {
+        font-size: 16px;
+      }
     }
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
+  @media (min-width: 768px) {
+    header {
+      height: 100vh;
     }
-  }
+    .titles {
+      margin: 0px;
+      h1 {
+        font-size: 5rem;
 
-  @keyframes blink {
-    50% {
-      border-color: transparent;
+        span {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    .logo {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .subtitles {
+      flex-wrap: nowrap;
+      gap: 5%;
+    }
+    .subtitles_text {
+      max-width: 600px;
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .subtitle2 {
+      span {
+        font-size: 24px;
+      }
     }
   }
 </style>

@@ -47,8 +47,9 @@
 </script>
 
 <Header />
-<Main />
-<Footer />
+
+<!-- <Main />
+<Footer /> -->
 
 <!--  <div id="move__logo" class="move__logo">
     <img src="./logo.png" width="0" height="0" alt="logo" />
