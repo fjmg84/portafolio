@@ -1,55 +1,83 @@
 <script>
-  import Section from "../../../common/Section.svelte";
   import { experience } from "../../../data/data.json";
+  let texts = experience.text.reverse();
 </script>
 
-<article class="container">
-  <Section
-    divProps={"experience"}
-    btnProps={"experienceBtn"}
-    title={experience.title}
-  >
-    <ul>
-      {#each experience.text as job}
-        <li class="">
-          <span>{job.entity}</span>
-          <small>{job.post}</small>
-        </li>
-      {/each}
-    </ul>
-  </Section>
-</article>
+<h1>{experience.title}</h1>
+<ul>
+  {#each texts as job}
+    <li>
+      <div class="linetime">
+        <div class="circle" />
+        <div class="line" />
+      </div>
+      <div>
+        <h3>{job.entity}</h3>
+        <p>{job.post}</p>
+        <small>{job.date}</small>
+      </div>
+    </li>
+  {/each}
+</ul>
 
 <style lang="scss">
+  @import "../../../color";
+
+  h1 {
+    font-family: "Paytone One";
+    font-size: 3rem;
+    text-align: center;
+  }
   ul {
     list-style-type: none;
     padding: 0%;
     li {
-      font-size: 1.5rem;
       display: flex;
-      align-items: center;
-      justify-content: left;
-      margin: 2% 0%;
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: right;
+      flex-direction: row;
+      gap: 10px;
+      align-items: baseline;
+      h3 {
         text-transform: uppercase;
-        margin: 0%;
-        &::after {
-          content: "";
-          border-radius: 100px;
-          background: #9333ea;
-          margin: 0% 2vw;
-          width: 5px;
-          height: 5px;
-        }
+        font-size: 1.7rem;
+        font-family: "Work Sans";
+      }
+
+      p {
+        font-family: "Work Sans";
+        font-size: 1.3rem;
+        line-height: 40px;
+        text-align: left;
+        font-style: italic;
       }
 
       small {
+        font-family: "Work Sans";
         font-style: italic;
         font-size: 1rem;
       }
     }
+  }
+
+  .linetime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    margin: 10px 20px;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    background: $white;
+    border-radius: 50%;
+  }
+
+  .line {
+    width: 2px;
+    height: 100px;
+    background: $white;
   }
 </style>

@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 
 * {
   margin: 0%;
@@ -6,63 +8,8 @@
 }
 
 body {
-  font-family: "Wix Madefor Display", sans-serif;
-  background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  -webkit-background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  -moz-background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  -o-background: linear-gradient(
-    whitesmoke,
-    violet,
-    #3376ea,
-    #9333ea,
-    #333,
-    rgb(38, 38, 38)
-  );
-  color: rgb(156 163 175);
-  padding: 2%;
-}
-
-h1 {
-  margin: 5% 0%;
-  background: radial-gradient(violet, #9333ea);
-  background: -o-radial-gradient(violet, #9333ea);
-  background: -moz-radial-gradient(violet, #9333ea);
-  background: -webkit-radial-gradient(violet, #9333ea);
-  font-size: 3rem;
-
-  -webkit-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
-}
-
-.container {
-  width: 100%;
-  border-bottom: 1px solid #9333ea;
+  color: white;
+  background: #020617;
 }
 
 .fade {

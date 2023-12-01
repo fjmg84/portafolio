@@ -1,18 +1,20 @@
 <script>
   import { aboutMe } from "../../../data/data.json";
-  import Section from "../../../common/Section.svelte";
 </script>
 
-<div class="container">
-  <Section divProps={"aboutMe"} btnProps={"aboutMeBtn"} title={aboutMe.title}>
-    <p>{aboutMe.text}</p>
-  </Section>
-</div>
+<h1>{aboutMe.title}</h1>
+<p>{aboutMe.text}</p>
 
 <style lang="scss">
+  h1 {
+    font-family: "Paytone One";
+    font-size: 3rem;
+    text-align: center;
+  }
   p {
-    font-size: large;
-    font-style: italic;
-    margin: 0%;
+    font-family: "Work Sans";
+    font-size: 1.7rem;
+    line-height: 40px;
+    text-align: center;
   }
 </style>
