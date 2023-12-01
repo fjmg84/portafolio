@@ -7,6 +7,8 @@
 
 <main>
   <section>
+    <div class="border-h-r" />
+    <div class="border-v-r" />
     <article>
       <AboutMe />
     </article>
@@ -16,27 +18,30 @@
     <article>
       <Skills />
     </article>
+
+    <div class="border-h-l" />
+    <div class="border-v-l" />
   </section>
 
   <section>
-    <article class="banner">
+    <div class="banner">
       <ul class="slider1">
-        {#each [1, 2, 3] as _}
+        {#each [1, 2, 3, 4, 5] as _}
           <li>
             <h1>Frontend Developer</h1>
             <img src="/svg/arrow-left.svg" alt="arrow" />
           </li>
         {/each}
       </ul>
-      <ul class="slider2">
-        {#each [1, 2, 3] as _}
+      <ul class="slider1">
+        {#each [1, 2, 3, 4, 5] as _}
           <li>
             <h1>Frontend Developer</h1>
             <img src="/svg/arrow-left.svg" alt="arrow" />
           </li>
         {/each}
       </ul>
-    </article>
+    </div>
   </section>
 
   <section>
@@ -55,6 +60,7 @@
     align-items: center;
     justify-content: center;
     gap: 10vh;
+    position: relative;
   }
 
   section {
@@ -66,7 +72,14 @@
   }
 
   article {
-    padding: 2%;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .border-v-r {
+    display: none;
   }
 
   .banner {
@@ -75,6 +88,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 10vh 0;
 
     h1 {
       color: $light_black;
@@ -127,6 +141,60 @@
     to {
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
+    }
+  }
+
+  @media (min-width: 768px) {
+    article {
+      max-width: 700px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    article {
+      max-width: 900px;
+    }
+
+    .border-v-r,
+    .border-h-r,
+    .border-v-l,
+    .border-h-l {
+      display: inline;
+      padding: 0.5px;
+      position: absolute;
+      background: $light_black;
+    }
+
+    .border-v-r {
+      height: 100%;
+      min-height: 500px;
+      max-height: 1500px;
+      right: 10%;
+      top: -100px;
+    }
+
+    .border-h-r {
+      width: 100%;
+      min-width: 500px;
+      max-width: 700px;
+      right: 5%;
+      top: -50px;
+    }
+
+    .border-v-l {
+      height: 100%;
+      min-height: 500px;
+      max-height: 1500px;
+      left: 10%;
+      bottom: -100px;
+    }
+
+    .border-h-l {
+      width: 100%;
+      min-width: 500px;
+      max-width: 700px;
+      left: 5%;
+      bottom: -50px;
     }
   }
 </style>

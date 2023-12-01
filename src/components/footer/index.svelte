@@ -6,7 +6,7 @@
 <footer>
   <h1>Contact Us</h1>
 
-  <div class="contacts">
+  <section class="contacts">
     <ul>
       {#each contactUs as contact}
         <li class="fade fade_top scroll_content">
@@ -31,7 +31,7 @@
         </li>
       {/each}
     </ul>
-  </div>
+  </section>
 </footer>
 
 <style lang="scss">
@@ -42,26 +42,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
+    margin: 20vh 0;
   }
 
   h1 {
-    width: 100%;
+    font-family: "Paytone One";
+    font-size: 3rem;
     text-align: center;
-    letter-spacing: -0.06em;
-    font-size: 5rem;
-    background: linear-gradient(45deg, $dark_violet, $blue);
-    background: -webkit-linear-gradient(45deg, $dark_violet, $blue);
-    background: -moz-linear-gradient(45deg, $dark_violet, $blue);
-    background: -o-linear-gradient(45deg, $dark_violet, $blue);
-    -webkit-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -o-background-clip: text;
-    -moz-background-clip: text;
   }
 
   .container {
@@ -90,17 +78,18 @@
       flex-direction: column;
       font-size: 0.789em;
       width: 70%;
-      *background-color: yellowgreen;
 
       a {
-        font-size: 1.2em;
+        font-size: 1.7em;
+        font-family: "Work Sans";
+        font-weight: 400;
         color: rgb(156 163 175);
         text-decoration: none;
         cursor: pointer;
         transition: all 0.5s;
 
         &:hover {
-          color: $violet;
+          text-shadow: 0px 0px 20px $white;
         }
       }
     }

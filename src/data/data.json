@@ -67,7 +67,7 @@
       "tools": ["NextJS", "Typescript", "SCSS"],
       "site": "https://www.camongs.es/",
       "github": null,
-      "image": "camon__global__services.png"
+      "image": "camon__global__services.webp"
     },
     {
       "name": "KIDSRUS",
@@ -75,7 +75,7 @@
       "tools": ["NextJS", "JS", "SCSS"],
       "site": "https://e-commerce-test-fjmg84.vercel.app",
       "github": "https://github.com/fjmg84/e-commerce-test",
-      "image": "e-commerce__baby.png"
+      "image": "e-commerce__baby.webp"
     },
     {
       "name": "Shopping Cart",
@@ -89,7 +89,7 @@
       ],
       "site": "https://shopping-cart-five-bay.vercel.app/",
       "github": "https://github.com/fjmg84/shopping-cart",
-      "image": "shopping__cart.png"
+      "image": "shopping__cart.webp"
     }
   ],
   "contactUs": [

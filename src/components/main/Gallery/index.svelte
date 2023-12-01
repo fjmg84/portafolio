@@ -3,7 +3,7 @@
 </script>
 
 {#each jobs as job}
-  <article>
+  <div class="container">
     <picture>
       <img src={`./image/${job.image}`} alt={job.image} />
     </picture>
@@ -32,12 +32,12 @@
         </div>
       </div>
     </div>
-  </article>
+  </div>
 {/each}
 
 <style lang="scss">
   @import "../../../color.scss";
-  article {
+  .container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -49,12 +49,6 @@
     font-family: "Work Sans";
     overflow: hidden;
     cursor: pointer;
-
-    &:hover {
-      .text {
-        transform: translateY(0%);
-      }
-    }
   }
 
   picture {
@@ -68,7 +62,6 @@
   }
 
   .text {
-    transform: translateY(100%);
     height: 100%;
     width: 100%;
     transition: all 0.5s ease-out;
@@ -134,13 +127,18 @@
   }
 
   @media (min-width: 768px) {
-    article {
-      //background: yellow;
-      max-width: 700px;
+    .container {
       margin: 5vh 0;
+
+      &:hover {
+        .text {
+          transform: translateY(0%);
+        }
+      }
     }
 
     .text {
+      transform: translateY(100%);
       position: absolute;
       background: #262626e3;
     }
@@ -151,13 +149,6 @@
         color: $white;
         border: 0;
       }
-    }
-  }
-
-  @media (min-width: 1024px) {
-    article {
-      max-width: 900px;
-      //background: green;
     }
   }
 </style>

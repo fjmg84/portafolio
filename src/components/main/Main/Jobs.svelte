@@ -1,10 +1,11 @@
 <script>
   import { experience } from "../../../data/data.json";
+  let texts = experience.text.reverse();
 </script>
 
 <h1>{experience.title}</h1>
 <ul>
-  {#each experience.text as job}
+  {#each texts as job}
     <li>
       <div class="linetime">
         <div class="circle" />
