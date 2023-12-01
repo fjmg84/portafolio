@@ -2,7 +2,7 @@
   "presentation": {
     "title": "I'm a frontend developer.",
     "subtitle": "Fidel Miranda",
-    "subtitle2": "I dedicate myself to creating web applications..."
+    "subtitle2": "I dedicate myself to creating applications..."
   },
   "aboutMe": {
     "title": "About Me",
@@ -12,25 +12,30 @@
     "title": "Work Experience",
     "text": [
       {
-        "entity": "dspot",
-        "post": "Frontend Developer"
+        "entity": "DSPOT",
+        "post": "Frontend Developer",
+        "date": "Jun 2022 - Feb 2023"
       },
 
       {
         "entity": "ACUBAMOS",
-        "post": "FullStack Developer"
+        "post": "FullStack Developer",
+        "date": "Aug 2022 - Jan 2022"
       },
       {
         "entity": "EMCOMED",
-        "post": "Network Administrator & Backend Developer"
+        "post": "Network Administrator & Backend Developer",
+        "date": "Mar 2014 - Jun 2022"
       },
       {
         "entity": "PRINCITY",
-        "post": "Graphic Designer"
+        "post": "Graphic Designer",
+        "date": "Oct 2012 - Mar 2014"
       },
       {
         "entity": "COPEXTEL",
-        "post": "Information Security Manager"
+        "post": "Information Security Manager",
+        "date": "Jul 2008 - Sep 2012"
       }
     ]
   },
@@ -62,7 +67,7 @@
       "tools": ["NextJS", "Typescript", "SCSS"],
       "site": "https://www.camongs.es/",
       "github": null,
-      "image": "camon__global__services.webp"
+      "image": "camon__global__services.png"
     },
     {
       "name": "KIDSRUS",
@@ -70,15 +75,7 @@
       "tools": ["NextJS", "JS", "SCSS"],
       "site": "https://e-commerce-test-fjmg84.vercel.app",
       "github": "https://github.com/fjmg84/e-commerce-test",
-      "image": "e-commerce__baby.webp"
-    },
-    {
-      "name": "CurrentChange",
-      "description": "Tool to know the exchange rate between currencies. Consuming APILayer.",
-      "tools": ["NextJS", "Typescript", "SCSS", "React Query"],
-      "site": "https://currency-exchange-fjmg84.vercel.app/",
-      "github": "https://github.com/fjmg84/fonoma-test",
-      "image": "current__change.webp"
+      "image": "e-commerce__baby.png"
     },
     {
       "name": "Shopping Cart",
@@ -92,7 +89,7 @@
       ],
       "site": "https://shopping-cart-five-bay.vercel.app/",
       "github": "https://github.com/fjmg84/shopping-cart",
-      "image": "shopping__cart.webp"
+      "image": "shopping__cart.png"
     }
   ],
   "contactUs": [

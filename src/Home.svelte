@@ -12,7 +12,7 @@
     threshold: 0.5,
   };
 
-  document.addEventListener("mousemove", (events) => {
+  /* document.addEventListener("mousemove", (events) => {
     let X = events.pageX;
     let Y = events.pageY;
     const value = 100;
@@ -43,12 +43,13 @@
     };
     const observer = new IntersectionObserver(showCursor, options);
     observer.observe(divShowCursor);
-  });
+  }); */
 </script>
 
 <Header />
+<Main />
 
-<!-- <Main />
+<!-- 
 <Footer /> -->
 
 <!--  <div id="move__logo" class="move__logo">

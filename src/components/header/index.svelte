@@ -64,6 +64,7 @@
   header {
     width: 100%;
     height: 100%;
+    margin-bottom: 20vh;
   }
 
   .titles {
@@ -77,6 +78,7 @@
     margin: 140px 0px 40px;
 
     h1 {
+      text-align: center;
       font-size: 4rem;
       font-weight: bold;
       font-family: "Paytone One";
@@ -87,7 +89,7 @@
       span {
         font-size: 3rem;
         font-weight: bold;
-        font-family: "Ubuntu";
+        font-family: "Paytone One";
       }
     }
   }
@@ -100,6 +102,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
+    text-align: center;
   }
 
   .logo {
@@ -114,17 +117,19 @@
     display: flex;
     gap: 2vh;
     flex-direction: column;
-    width: 100%; //600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
     h2 {
-      font-size: 2rem; //4rem;
+      font-size: 3rem; //4rem;
       font-family: "Ubuntu";
     }
 
     a {
       overflow: hidden;
       position: relative;
-      padding: 18px 0px;
+      padding: 18px 30px;
       color: $white;
       text-decoration: none;
       font-family: "Ubuntu";
@@ -158,17 +163,17 @@
   .subtitle2 {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     span {
-      font-size: 14px; //24px;
+      font-size: 20px;
       font-family: "Ubuntu";
       display: block;
       border-right: 2px solid;
       overflow: hidden;
-      width: 38ch;
+      width: 34ch;
       white-space: nowrap;
       animation:
-        typing 2.5s steps(38),
+        typing 2.5s steps(34),
         blink 0.5s infinite step-end alternate;
     }
   }
@@ -244,10 +249,12 @@
   @media (min-width: 768px) {
     header {
       height: 100vh;
+      margin: 0;
     }
     .titles {
       margin: 0px;
       h1 {
+        text-align: left;
         font-size: 5rem;
 
         span {
@@ -268,12 +275,14 @@
     }
     .subtitles_text {
       max-width: 600px;
+      align-items: flex-start;
       h2 {
         font-size: 4rem;
       }
     }
 
     .subtitle2 {
+      justify-content: flex-start;
       span {
         font-size: 24px;
       }

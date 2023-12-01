@@ -7,43 +7,126 @@
 
 <main>
   <section>
-    <AboutMe />
+    <article>
+      <AboutMe />
+    </article>
+    <article>
+      <Jobs />
+    </article>
+    <article>
+      <Skills />
+    </article>
   </section>
+
   <section>
-    <Jobs />
+    <article class="banner">
+      <ul class="slider1">
+        {#each [1, 2, 3] as _}
+          <li>
+            <h1>Frontend Developer</h1>
+            <img src="/svg/arrow-left.svg" alt="arrow" />
+          </li>
+        {/each}
+      </ul>
+      <ul class="slider2">
+        {#each [1, 2, 3] as _}
+          <li>
+            <h1>Frontend Developer</h1>
+            <img src="/svg/arrow-left.svg" alt="arrow" />
+          </li>
+        {/each}
+      </ul>
+    </article>
   </section>
+
   <section>
-    <Skills />
-  </section>
-  <section class="gallery">
-    <Gallery />
+    <article>
+      <Gallery />
+    </article>
   </section>
 </main>
 
 <style lang="scss">
+  @import "../../color";
+
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 0 5%;
+    gap: 10vh;
   }
 
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     width: 100%;
-    max-width: 800px;
   }
 
-  .gallery {
+  article {
+    padding: 2%;
+  }
+
+  .banner {
+    background: $white;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    gap: 40px;
-    max-width: 1000px;
+    flex-direction: row;
+
+    h1 {
+      color: $light_black;
+      font-family: "Work Sans";
+      font-size: 4rem;
+      text-wrap: nowrap;
+    }
+  }
+
+  .slider1,
+  .slider2 {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    li {
+      width: auto;
+      margin: 10px 0;
+      display: flex;
+      img {
+        margin: 0px 80px;
+      }
+    }
+  }
+
+  .slider1 {
+    animation: scroll1 40s linear infinite;
+  }
+
+  .slider2 {
+    animation: scroll2 40s linear infinite;
+  }
+
+  @keyframes scroll1 {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    to {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll2 {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    to {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
   }
 </style>
