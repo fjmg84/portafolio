@@ -77,7 +77,7 @@
 
   .line {
     width: 2px;
-    height: 100px;
+    height: 150px;
     background: $white;
   }
 </style>
