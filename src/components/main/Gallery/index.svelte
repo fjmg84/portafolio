@@ -86,6 +86,9 @@
         border-radius: 30px;
       }
     }
+    p {
+      line-height: 25px;
+    }
   }
 
   .links {
