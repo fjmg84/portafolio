@@ -5,16 +5,18 @@
 
 <h1>{experience.title}</h1>
 <ul>
-  {#each texts as job}
+  {#each texts as { entity, post, date }, i}
     <li>
       <div class="linetime">
         <div class="circle" />
-        <div class="line" />
+        {#if i + 1 < texts.length}
+          <div class="line" />
+        {/if}
       </div>
       <div>
-        <h3>{job.entity}</h3>
-        <p>{job.post}</p>
-        <small>{job.date}</small>
+        <h3>{entity}</h3>
+        <p>{post}</p>
+        <small>{date}</small>
       </div>
     </li>
   {/each}
