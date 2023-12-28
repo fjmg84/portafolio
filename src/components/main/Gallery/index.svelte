@@ -53,6 +53,7 @@
 
   picture {
     width: 100%;
+    max-width: 800px;
     height: auto;
 
     img {
@@ -64,7 +65,7 @@
   .text {
     height: 100%;
     width: 100%;
-    transition: all 0.5s ease-out;
+    transition: all 0.2s ease;
   }
 
   .box {

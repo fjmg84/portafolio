@@ -4,12 +4,8 @@
 
 <h1>{skills.title}</h1>
 <ul>
-  {#each skills.text as skill}
-    {#if skill !== "GraphQL"}
-      <li><p>{skill}</p></li>
-    {:else}
-      <li>{skill}</li>
-    {/if}
+  {#each skills.text as skill, i}
+    <li>{skill}</li>
   {/each}
 </ul>
 
@@ -33,9 +29,9 @@
     li {
       float: left;
       font-family: "Work Sans";
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       background: $light_black;
-      padding: 10px;
+      padding: 10px 20px;
       p {
         display: flex;
         align-items: center;
