@@ -12,11 +12,15 @@
     "title": "Work Experience",
     "text": [
       {
+        "entity": "Looking for work",
+        "post": "",
+        "date": ""
+      },
+      {
         "entity": "DSPOT",
         "post": "Frontend Developer",
         "date": "Jun 2022 - Feb 2023"
       },
-
       {
         "entity": "ACUBAMOS",
         "post": "FullStack Developer",
