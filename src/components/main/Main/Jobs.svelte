@@ -5,7 +5,7 @@
 
 <h1>{experience.title}</h1>
 <ul>
-  {#each texts as { entity, post, date }, i}
+  {#each texts as { entity, post, date, description }, i}
     <li>
       <div class="linetime">
         <div class="circle" />
@@ -13,10 +13,11 @@
           <div class="line" />
         {/if}
       </div>
-      <div>
+      <div style="display: flex; flex-direction:column; gap: 10px">
         <h3>{entity}</h3>
         <p>{post}</p>
-        <small>{date}</small>
+        <p>{date}</p>
+        <small>{description}</small>
       </div>
     </li>
   {/each}
@@ -47,7 +48,6 @@
       p {
         font-family: "Work Sans";
         font-size: 1.3rem;
-        line-height: 40px;
         text-align: left;
         font-style: italic;
       }
@@ -79,7 +79,8 @@
 
   .line {
     width: 2px;
-    height: 150px;
+    height: auto;
+    min-height: 180px;
     background: $white;
   }
 </style>

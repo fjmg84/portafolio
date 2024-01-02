@@ -14,32 +14,38 @@
       {
         "entity": "Freelance & Looking for work",
         "post": "",
-        "date": "Apr 2023"
+        "date": "Apr 2023",
+        "description": "Learning to create apk with React-Native and consolidating my knowledge, always learning new things and looking for new challenges."
       },
       {
         "entity": "DSPOT",
         "post": "Frontend Developer",
-        "date": "Jun 2022 - Feb 2023"
+        "date": "Jun 2022 - Feb 2023",
+        "description": "Here I started using TypeScript, I also strengthened my skills in design and the application of styles with CSS and Sass. I had the opportunity to participate in the development of applications with a high level of design, which has been very enriching. Additionally, I incorporated Figma as a tool for application development, which has allowed me to streamline my workflow and create more effective designs."
       },
       {
         "entity": "ACUBAMOS",
         "post": "FullStack Developer",
-        "date": "Aug 2022 - Jan 2022"
+        "date": "Aug 2022 - Jan 2022",
+        "description": "I supported the development of an ecommerce, providing code in the backend with ExpressJS and in the frontend with React. During this project, I acquired knowledge about Redis and RabbitMQ, using these technologies to store data in memory and thus provide information to the client quickly. Additionally, I implemented microservices for the different web services."
       },
       {
         "entity": "EMCOMED",
         "post": "Network Administrator & Backend Developer",
-        "date": "Mar 2014 - Jun 2022"
+        "date": "Mar 2014 - Jun 2022",
+        "description": "I was in charge of managing both Windows and Linux servers, with services such as FTP, Apache and Active Directory. Additionally, I contributed by creating applications to solve administration and service problems on said servers. During this experience, I worked with PHP, Node.js and ReactJS."
       },
       {
         "entity": "PRINCITY",
         "post": "Graphic Designer",
-        "date": "Oct 2012 - Mar 2014"
+        "date": "Oct 2012 - Mar 2014",
+        "description": "Work on the design of web pages, book covers, advertising posters and business cards. During my career, I have learned to use tools like CorelDRAW and have consolidated my skills with Photoshop."
       },
       {
         "entity": "COPEXTEL",
         "post": "Information Security Manager",
-        "date": "Jul 2008 - Sep 2012"
+        "date": "Jul 2008 - Sep 2012",
+        "description": "I was helping to apply techniques for the security of the company's network, implementing fireworks and configuring servers and switches."
       }
     ]
   },
