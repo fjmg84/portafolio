@@ -32,10 +32,16 @@
       font-size: 1.2rem;
       background: $light_black;
       padding: 10px 20px;
+      transition: all 0.2s ease;
       p {
         display: flex;
         align-items: center;
         justify-content: right;
+        color: white;
+      }
+      &:hover {
+        background-color: white;
+        color: $light_black;
       }
     }
   }
