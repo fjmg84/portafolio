@@ -7,17 +7,27 @@
 <ul>
   {#each texts as { entity, post, date, description }, i}
     <li>
-      <div class="linetime">
-        <div class="circle" />
-        {#if i + 1 < texts.length}
+      <div style="display: flex; flex-direction:row; gap: 10px">
+        <div
+          style="display: flex; flex-direction: column; align-items: center; position: relative"
+        >
+          <div class="circle" />
           <div class="line" />
-        {/if}
-      </div>
-      <div style="display: flex; flex-direction:column; gap: 10px">
-        <h3>{entity}</h3>
-        <p>{post}</p>
-        <p>{date}</p>
-        <small>{description}</small>
+          {#if i + 1 >= texts.length}
+            <img
+              src="/svg/arrow-down-timeline.svg"
+              alt="arrow-down"
+              style="position: absolute; bottom: 0;"
+              width="40px"
+            />
+          {/if}
+        </div>
+        <div style="display: flex; flex-direction:column; gap: 5px">
+          <h3>{entity}</h3>
+          <p>{post}</p>
+          <p>{date}</p>
+          <p class="description">{description}</p>
+        </div>
       </div>
     </li>
   {/each}
@@ -52,15 +62,16 @@
         font-style: italic;
       }
 
-      small {
+      .description {
         font-family: "Work Sans";
         font-style: italic;
         font-size: 1rem;
+        margin-bottom: 10%;
       }
     }
   }
 
-  .linetime {
+  /* .linetime {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +79,7 @@
     width: 10px;
     margin: 10px 20px;
     gap: 20px;
-  }
+  } */
 
   .circle {
     width: 20px;
@@ -79,8 +90,8 @@
 
   .line {
     width: 2px;
-    height: auto;
     min-height: 180px;
     background: $white;
+    height: 100%;
   }
 </style>
