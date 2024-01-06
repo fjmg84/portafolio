@@ -67,6 +67,7 @@
         font-style: italic;
         font-size: 1rem;
         margin-bottom: 10%;
+        line-height: 25px;
       }
     }
   }
