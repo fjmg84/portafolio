@@ -105,7 +105,7 @@
     },
     {
       "name": "Multi step form",
-      "description": "Multi-step form. For the state of the form I used Zustand and to give it a touch of tailwind styles.",
+      "description": "Challenge Frontend multi-step-form. For the state of the form I used Zustand and to give it a touch of tailwind styles.",
       "tools": ["ReactJs", "Tailwindcss", "Zustand"],
       "site": "https://multi-step-form-ashy.vercel.app/",
       "github": "https://github.com/fjmg84/multi-step-form",
