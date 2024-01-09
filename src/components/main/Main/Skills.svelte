@@ -5,7 +5,9 @@
 <h1>{skills.title}</h1>
 <ul>
   {#each skills.text as skill, i}
-    <li>{skill}</li>
+    <li style={`background:${skill.bg}; color:${skill.color ?? ""}`}>
+      {skill.name}
+    </li>
   {/each}
 </ul>
 
@@ -26,6 +28,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    max-width: 750px;
     li {
       float: left;
       font-family: "Work Sans";
@@ -39,10 +42,10 @@
         justify-content: right;
         color: white;
       }
-      &:hover {
+      /* &:hover {
         background-color: white;
         color: $light_black;
-      }
+      } */
     }
   }
 </style>

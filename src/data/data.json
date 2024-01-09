@@ -52,24 +52,65 @@
   "skills": {
     "title": "Skills",
     "text": [
-      "HTML",
-      "CSS",
-      "SASS",
-      "Styles Component",
-      "Tailwindcss",
-      "JavaScript",
-      "TypeScript",
-      "ReactJS",
-      "ReactNative",
-      "NextJS",
-      "Svelte",
-      "Redux",
-      "GraphQL",
-      "Zustand",
-      "NodeJs",
-      "SQL",
-      "Linux Server",
-      "Windows Server"
+      {
+        "name": "HTML5",
+        "bg": "#f16a30"
+      },
+      {
+        "name": "CSS3",
+        "bg": "#00AFFF"
+      },
+      {
+        "name": "SASS",
+        "bg": "#ce6b9c"
+      },
+
+      {
+        "name": "Styles Component",
+        "bg": "#fea4db"
+      },
+      {
+        "name": "Tailwindcss",
+        "bg": "#3ebff8"
+      },
+      {
+        "name": "JavaScript",
+        "bg": "#f7e025",
+        "color": "#000"
+      },
+      {
+        "name": "TypeScript",
+        "bg": "#007ACC"
+      },
+      {
+        "name": "ReactJS",
+        "bg": "#61DAFB"
+      },
+      {
+        "name": "NextJS",
+        "bg": "#000"
+      },
+      {
+        "name": "Svelte",
+        "bg": "#FF3E00"
+      },
+      {
+        "name": "Redux",
+        "bg": "#764ABC"
+      },
+      {
+        "name": "Zustand",
+        "bg": "#FFD700",
+        "color": "#000"
+      },
+      {
+        "name": "GraphQL",
+        "bg": "#E10098"
+      },
+      {
+        "name": "NodeJs",
+        "bg": "#339933"
+      }
     ]
   },
   "jobs": [
