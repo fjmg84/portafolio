@@ -75,7 +75,7 @@
   "jobs": [
     {
       "name": "camon",
-      "description": "landing page about CAMON Global Services, using Nextjs and tailwindcss. using best practices for performance, SEO, accessibility and best practices",
+      "description": "Landing page about CAMON Global Services, using Nextjs and tailwindcss. using best practices for performance, SEO, accessibility and best practices",
       "tools": ["NextJS", "Typescript", "Tailwindcss"],
       "site": "https://www.camongs.es/",
       "github": null,
