@@ -4,6 +4,10 @@
 
 {#each jobs as job}
   <div class="container">
+    {#if job.challenge}
+      <span class="challenge">challenger</span>
+    {/if}
+
     <picture>
       <img src={`./image/${job.image}`} alt={job.image} />
     </picture>
@@ -37,6 +41,18 @@
 
 <style lang="scss">
   @import "../../../color.scss";
+
+  .challenge {
+    position: absolute;
+    background: rgb(252, 84, 84);
+    padding: 1% 5%;
+    top: 2%;
+    right: 2%;
+    border-radius: 50px;
+    font-size: 12px;
+    z-index: 1000;
+  }
+
   .container {
     width: 100%;
     display: flex;
@@ -48,7 +64,6 @@
     font-weight: 600;
     font-family: "Work Sans";
     overflow: hidden;
-    cursor: pointer;
   }
 
   picture {
@@ -133,6 +148,7 @@
   @media (min-width: 768px) {
     .container {
       margin: 5vh 0;
+      cursor: pointer;
 
       &:hover {
         .text {
