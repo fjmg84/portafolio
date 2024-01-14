@@ -123,6 +123,14 @@
       "image": "camon__global__services.webp"
     },
     {
+      "name": "f-resources",
+      "description": "Page listing some of the pages with resources for development, design and documentation for the community of web developers and designers.",
+      "tools": ["Sveltekit", "Typescript", "Tailwindcss", "Strapi", "Supabase"],
+      "site": "https://f-resources.vercel.app/",
+      "github": "https://github.com/fjmg84/f-resources",
+      "image": "f-resources.webp"
+    },
+    {
       "name": "KIDSRUS",
       "description": "Ecommerce layout with NextJs and SCSS. The site was designed with NextJs to take advantage of the advantages of the framework. There are small animations of shadows and image overlays. The magnifying glass effect is used to show a more detailed image.",
       "tools": ["NextJS", "JS", "SCSS"],
