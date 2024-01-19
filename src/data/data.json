@@ -125,7 +125,7 @@
     {
       "name": "f-resources",
       "description": "Page listing some of the pages with resources for development, design and documentation for the community of web developers and designers.",
-      "tools": ["Sveltekit", "Typescript", "Tailwindcss", "Strapi", "Supabase"],
+      "tools": ["Sveltekit", "Typescript", "Tailwindcss", "Graphql"],
       "site": "https://f-resources.vercel.app/",
       "github": "https://github.com/fjmg84/f-resources",
       "image": "f-resources.webp"
