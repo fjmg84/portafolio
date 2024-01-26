@@ -75,7 +75,7 @@
     padding: 5vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 100px;
   }
 
   .border-v-r {

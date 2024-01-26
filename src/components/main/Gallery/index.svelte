@@ -7,33 +7,31 @@
     {#if job.challenge}
       <span class="challenge">challenger</span>
     {/if}
-
     <picture>
       <img src={`./image/${job.image}`} alt={job.image} />
     </picture>
 
     <div class="text">
-      <div class="box">
-        <ul>
-          {#each job.tools as tool}
-            <li>{tool}</li>
-          {/each}
-        </ul>
-        <p>{job.description}</p>
+      <p>{job.description}</p>
 
-        <div class="links">
-          <a target="_blank" href={job.site}
-            >go to site
+      <ul>
+        {#each job.tools as tool}
+          <li>{tool}</li>
+        {/each}
+      </ul>
+
+      <div class="links">
+        <a target="_blank" href={job.site}
+          >go to site
+          <div class="subtitles_text_link_img"></div>
+        </a>
+
+        {#if job.github}
+          <a target="_blank" href={job.github}
+            >go to github
             <div class="subtitles_text_link_img"></div>
           </a>
-
-          {#if job.github}
-            <a target="_blank" href={job.github}
-              >go to github
-              <div class="subtitles_text_link_img"></div>
-            </a>
-          {/if}
-        </div>
+        {/if}
       </div>
     </div>
   </div>
@@ -47,28 +45,26 @@
     background: rgb(252, 84, 84);
     padding: 1% 5%;
     top: 2%;
-    right: 2%;
+    left: 2%;
     border-radius: 50px;
     font-size: 12px;
     z-index: 1000;
   }
 
   .container {
+    position: relative;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 10vh 0;
     flex-wrap: wrap;
-    position: relative;
     font-weight: 600;
     font-family: "Work Sans";
     overflow: hidden;
+    gap: 40px;
   }
 
   picture {
-    width: 100%;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
 
     img {
@@ -78,13 +74,8 @@
   }
 
   .text {
-    height: 100%;
-    width: 100%;
+    max-width: 350px;
     transition: all 0.2s ease;
-  }
-
-  .box {
-    padding: 5%;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -146,7 +137,7 @@
   }
 
   @media (min-width: 768px) {
-    .container {
+    /* .container {
       margin: 5vh 0;
       cursor: pointer;
 
@@ -155,14 +146,14 @@
           transform: translateY(0%);
         }
       }
-    }
+    } */
 
-    .text {
+    /*    .text {
       transform: translateY(100%);
       position: absolute;
       background: #262626e3;
     }
-
+ */
     .links {
       :nth-child(2) {
         background: $light_black;

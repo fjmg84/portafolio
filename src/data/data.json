@@ -131,28 +131,6 @@
       "image": "f-resources.webp"
     },
     {
-      "name": "KIDSRUS",
-      "description": "Ecommerce layout with NextJs and SCSS. The site was designed with NextJs to take advantage of the advantages of the framework. There are small animations of shadows and image overlays. The magnifying glass effect is used to show a more detailed image.",
-      "tools": ["NextJS", "JS", "SCSS"],
-      "site": "https://e-commerce-test-fjmg84.vercel.app",
-      "github": "https://github.com/fjmg84/e-commerce-test",
-      "image": "e-commerce__baby.webp"
-    },
-    {
-      "name": "Shopping Cart",
-      "description": "Simulate the purchasing process in an e-commerce. You can add, modify and delete the product from the shopping cart. You can see the product in details. There are several filters to list products.",
-      "tools": [
-        "ReactJs",
-        "Typescript",
-        "Tailwindcss",
-        "ReduxToolkit",
-        "RTQuery"
-      ],
-      "site": "https://shopping-cart-five-bay.vercel.app/",
-      "github": "https://github.com/fjmg84/shopping-cart",
-      "image": "shopping__cart.webp"
-    },
-    {
       "name": "Multi step form",
       "description": "In the challenge, a form had to be created where the form was shown in steps, the user had to be allowed to go to the previous step if they had already gone through it and at the end show the user's data.",
       "tools": ["ReactJs", "Tailwindcss", "Zustand"],
