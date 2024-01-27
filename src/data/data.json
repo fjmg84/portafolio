@@ -6,7 +6,7 @@
   },
   "aboutMe": {
     "title": "About Me",
-    "text": "Passionate about web design and development, committed to offering innovative and effective solutions for each project."
+    "text": "<p style='line-height: 50px;'><strong style='font-size: 2.5rem; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: blueviolet;line-height: 15pt;'>Passionate</strong> about web design and development, <strong style='font-size: 2.5rem; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: blueviolet;line-height: 15pt;''>committed</strong> to offering <strong style='font-size: 2.5rem; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: blueviolet;line-height: 15pt;''>innovative</strong> and <strong style='font-size: 2.5rem; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: blueviolet;line-height: 15pt;''>effective solutions</strong> for each project.</p>"
   },
   "experience": {
     "title": "Work Experience",

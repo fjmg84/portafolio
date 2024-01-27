@@ -3,7 +3,7 @@
 </script>
 
 <h1>{aboutMe.title}</h1>
-<p>{aboutMe.text}</p>
+<div class="text">{@html aboutMe.text}</div>
 
 <style lang="scss">
   h1 {
@@ -11,7 +11,7 @@
     font-size: 3rem;
     text-align: center;
   }
-  p {
+  .text {
     font-family: "Work Sans";
     font-size: 1.7rem;
     line-height: 40px;
